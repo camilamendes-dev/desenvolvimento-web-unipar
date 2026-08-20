@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+</head>
+<body>
+    <h1>Página de cadastro</h1>
+    <fieldset>
+        <legend>Crie sua conta</legend>
+        <form action="url-api-back-end" method="post">
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"
+                placeholder="Nome"
+                title="Informe o seu nome completo"
+                required
+                maxlength="30"
+                pattern="[A-Za-z ]+">
+            <!-- MIN E MAX USADO PARA NUMBER -->
+
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <br>
+
+            <label for="senha">Senha (mínimo 8 caracteres):</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6">
+            <br>
+            <br>
+
+            <label><strong>Gênero:</strong></label>
+            <br>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+            <br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>
+            <br>
+            <br>
+
+            <label for="bio"><strong>Biografia:</strong></label>
+            <br>
+            <textarea name="bio" id="bio"
+                placeholder="Insira sua história..."
+                rows="6" cols="30" style="resize: none;"></textarea>
+            <br>
+            <br>
+
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Eu li e aceito os termos de serviço.</label>
+            <br>
+            <br>
+
+            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Limpar">
+
+        </form>
+    </fieldset>
+</body>
+</html>
