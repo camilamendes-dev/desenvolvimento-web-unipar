@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.relativo{
+    width: 200px;
+    height: 200px;
+    background: yellowgreen;
+    position: relative;
+    left: 40%;
+    /* overflow-x: hidden; barra horizontal, e elementos */
+    z-index: 1;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+
+.absoluto{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    position: absolute;
+    left: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 20%;
+}
+
+.fixo{
+    width: 100px;
+    height: 100px;
+    background: rgb(31, 168, 168);
+    position: fixed;
+    left: 88%;
+    bottom: 10%;
+    transition: 0.5s ease-in-out;
+}
+
+.fixo:hover{
+    border-radius: 50%;
+}
+
+.block{
+    background-color: red;
+    height: 100px;
+}
+
+.inline{
+    background-color: purple;
+    /* height: 100px; vai ignorar totalmente esse comando */
+}
+
+.inline-block{
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+}
+
+.texto > h1{
+    font-size: 32px;
+}
+
+.texto > h2{
+    font-size: 2rem; 
+    /* vai ter o equivalente 32 pixels */
+    /* em fontes sempre usar REM por acessibilidade */
+    /* se mudar por ex tamanho da fonte no celular de um idoso, se tiver com px, não vai ficar grande */
+}

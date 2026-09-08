@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: #fcf6ef;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex vai deixar os quadrados um ao lado do outro, e nao em baixo */
+    justify-content: center;
+    /* center, spacte-betwen, flex-start, flex-end */
+    align-items: center;
+    gap: 24px; /* espaçamento entre itens */
+    /* essa pergunta vai cair da prova, display, justfy e align-tens */
+    flex-wrap: wrap; /* para quebrar a linha e o item ir para a linha em baixo em vez de reduzir tamanho */
+    flex-grow: 1;
+
+}
+
+.caixa {
+    flex-grow: 1;
+    width: 140px;
+    height: 140px;
+    background-color: blueviolet;
+    border: solid 6px black;
+}
