@@ -21,7 +21,7 @@ function formatarMoeda(valor) {
 }
 
 function exibirMenu() {
-    console.log("\n===== BANCO DIGITAL =====");
+    console.log("\n===== BANCO DIGITAL DA CAMILA =====");
     console.log("1 - Consultar dados da conta");
     console.log("2 - Consultar saldo");
     console.log("3 - Realizar débito");
