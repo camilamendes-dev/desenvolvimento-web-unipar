@@ -1,4 +1,3 @@
-// Importa o módulo readline para interação via terminal
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -6,17 +5,14 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// Dados fixos do titular da conta
 const titular = {
     nome: "Camila Mendes",
     agencia: "0001",
     conta: "123456-7"
 };
 
-// Saldo inicial da conta
 let saldo = 1000;
 
-// Formata um número para o padrão de moeda brasileira (R$)
 function formatarMoeda(valor) {
     return new Intl.NumberFormat('pt-BR', {
         style: 'currency',
