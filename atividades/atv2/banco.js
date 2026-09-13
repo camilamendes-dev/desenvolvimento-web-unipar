@@ -24,7 +24,6 @@ function formatarMoeda(valor) {
     }).format(valor);
 }
 
-// Exibe o menu principal
 function exibirMenu() {
     console.log("\n===== BANCO DIGITAL =====");
     console.log("1 - Consultar dados da conta");
@@ -39,7 +38,6 @@ function exibirMenu() {
     });
 }
 
-// Trata a opção escolhida pelo usuário
 function tratarOpcao(opcao) {
     switch (opcao) {
         case "1":
@@ -65,7 +63,6 @@ function tratarOpcao(opcao) {
     }
 }
 
-// Opção 1 - Consultar dados da conta
 function consultarDados() {
     console.log("\n--- Dados da Conta ---");
     console.log(`Nome: ${titular.nome}`);
@@ -74,13 +71,11 @@ function consultarDados() {
     exibirMenu();
 }
 
-// Opção 2 - Consultar saldo
 function consultarSaldo() {
     console.log(`\nSeu saldo atual é de ${formatarMoeda(saldo)}`);
     exibirMenu();
 }
 
-// Opção 3 - Realizar débito
 function realizarDebito() {
     rl.question("\nDigite o valor do débito: ", (resposta) => {
         const valor = parseFloat(resposta);
@@ -99,7 +94,6 @@ function realizarDebito() {
     });
 }
 
-// Opção 4 - Realizar crédito
 function realizarCredito() {
     rl.question("\nDigite o valor do crédito: ", (resposta) => {
         const valor = parseFloat(resposta);
@@ -116,5 +110,4 @@ function realizarCredito() {
     });
 }
 
-// Inicia o programa exibindo o menu
 exibirMenu();
