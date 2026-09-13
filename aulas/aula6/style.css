@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fdf1e2;
+}
+
+.ativo{
+    color: green;
+}

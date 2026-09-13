@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fdf1e2;
+}
+
+#exemplos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+    margin-bottom: 12px;
+}

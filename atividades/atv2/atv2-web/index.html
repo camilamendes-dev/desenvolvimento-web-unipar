@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="banco">
+        <h1>🏦 Banco Digital</h1>
+
+        <div class="menu">
+            <button onclick="consultarDados()">1 - Consultar dados da conta</button>
+            <button onclick="consultarSaldo()">2 - Consultar saldo</button>
+            <button onclick="realizarDebito()">3 - Realizar débito</button>
+            <button onclick="realizarCredito()">4 - Realizar crédito</button>
+        </div>
+
+        <h2>Resultado:</h2>
+        <div id="resultado">
+            <p>Escolha uma opção do menu acima.</p>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

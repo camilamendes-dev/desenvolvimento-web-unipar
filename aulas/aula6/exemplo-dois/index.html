@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS no Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="exemplos">
+        <form onsubmit="adicionar(event)">
+            <label for="produto">Informe o produto:</label>
+            <input type="text" name="produto">
+            <label for="quantidade">Informe a quantidade:</label>
+            <input type="number" min="1" name="quantidade">
+            <button>
+                Adicionar
+            </button>
+        </form>
+        <h1>Lista de compras</h1>
+        <ul class="container"></ul>
+
+
+    </section>
+</body>
+
+<script src="./script.js"></script>
+</html>
